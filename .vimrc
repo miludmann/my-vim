@@ -9,6 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set mouse=a
+set backspace=indent,eol,start
 map  <C-m> :tabn<CR>
 map  <C-1> :tabp<CR>
 map  <C-n> :tabnew<CR>
