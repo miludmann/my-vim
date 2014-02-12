@@ -15,14 +15,16 @@ set number
 map  <C-m> :tabn<CR>
 map  <C-1> :tabp<CR>
 map  <C-n> :tabnew<CR>
+set pastetoggle=<F3>
 let mapleader = ","
 nnoremap <Tab> <C-w>w
+inoremap jk <ESC>
+vnoremap . :norm.<CR>
+" Easy buffer switching with F5 key
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+" Display a status line
 set laststatus=2
 "set statusline=%2*[%02n]%*\ %f\ %3*%(%m%)%4*%(%r%)%*%=%b\ %{fugitive#statusline()}\ 0x%B\ \ <%l,%c%V>\ %P
-"if !exists('g:airline_symbols')
-    "let g:airline_symbols = {}
-"endif
-"let g:airline_symbols.space = "\ua0"
 
 "colorscheme luna
 
@@ -50,3 +52,23 @@ if ! has('gui_running')
     augroup END
 endif
 "}
+
+"linting
+"{
+let @x = ":%!xmllint --format %\n"
+let @s = ":%!jsonlint %\n"
+let @j = ":%!jshint --show-non-errors %\n"
+:map @jj :%!js-beautify %"
+"}
+
+"spell checking
+"{
+set spell spelllang=en_us
+" Fix spelling with <leader>f
+nnoremap <leader>f 1z=
+" Toggle spelling visuals with <leader>s
+nnoremap <leader>s :set spell!
+"}
+
+"Map w!! for sudo writing
+cmap w!! w !sudo tee >/dev/null %
