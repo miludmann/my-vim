@@ -19,12 +19,12 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "/home/mludmann/.vim/bundle/vim-airline"]
-	path = /home/mludmann/.vim/bundle/vim-airline
+[submodule "/bundle/vim-airline"]
+	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "/home/mludmann/.vim/bundle/luna"]
-	path = /home/mludmann/.vim/bundle/luna
+[submodule "/bundle/luna"]
+	path = /bundle/luna
 	url = https://github.com/Pychimp/vim-luna
-[submodule "/home/mludmann/.vim/bundle/vim-colors-solarized"]
-	path = /home/mludmann/.vim/bundle/vim-colors-solarized
+[submodule "/bundle/vim-colors-solarized"]
+	path = /bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
