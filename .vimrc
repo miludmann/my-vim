@@ -19,6 +19,7 @@ set pastetoggle=<F3>
 let mapleader = ","
 nnoremap <Tab> <C-w>w
 inoremap jk <ESC>
+" Use dot "." to repeat previous command automatically
 vnoremap . :norm.<CR>
 " Easy buffer switching with F5 key
 :nnoremap <F5> :buffers<CR>:buffer<Space>
