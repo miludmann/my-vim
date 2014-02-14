@@ -15,14 +15,14 @@ set number
 map  <C-m> :tabn<CR>
 map  <C-1> :tabp<CR>
 map  <C-n> :tabnew<CR>
-set pastetoggle=<F3>
+set pastetoggle=<F4>
 let mapleader = ","
 nnoremap <Tab> <C-w>w
 inoremap jk <ESC>
 " Use dot "." to repeat previous command automatically
 vnoremap . :norm.<CR>
 " Easy buffer switching with F5 key
-:nnoremap <F5> :buffers<CR>:buffer<Space>
+:nnoremap <F6> :buffers<CR>:buffer<Space>
 " Display a status line
 set laststatus=2
 "set statusline=%2*[%02n]%*\ %f\ %3*%(%m%)%4*%(%r%)%*%=%b\ %{fugitive#statusline()}\ 0x%B\ \ <%l,%c%V>\ %P
@@ -45,12 +45,12 @@ set noshowmode
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
+set ttimeoutlen=10
+augroup FastEscape
+autocmd!
+au InsertEnter * set timeoutlen=0
+au InsertLeave * set timeoutlen=1000
+augroup END
 endif
 "}
 
@@ -73,3 +73,26 @@ nnoremap <leader>s :set spell!
 
 "Map w!! for sudo writing
 cmap w!! w !sudo tee >/dev/null %
+
+"YCM
+"{
+let g:ycm_extra_conf_globlist = ['~/.vim/bundle/YouCompleteMe/cpp/ycm/*','!~/*']
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"
+
+" Syntastic
+"{
+let g:syntastic_c_checkers=['make']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*gbar
+"}
