@@ -96,3 +96,18 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*gbar
 "}
+
+" Search related stuff
+"{
+" Highlight search results
+set hlsearch
+" Makes search act like search in modern browsers
+set incsearch
+"}
+
+" Handling temporary swap files at a global level
+"{
+silent execute '!mkdir -p "'.$HOME.'/.vim/swapfiles"'
+set backupdir=$HOME/.vim/swapfiles//
+set directory=$HOME/.vim/swapfiles//
+"}
