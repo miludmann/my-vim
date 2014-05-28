@@ -1,7 +1,7 @@
 " Pathogen
 call pathogen#infect()
-call pathogen#helptags() " generate helptags for everything in 'runtimepath'
-filetype off " Pathogen needs to run before plugin indent on
+call pathogen#helptags()            " generate helptags for everything in 'runtimepath'
+filetype off                        " Pathogen needs to run before plugin indent on
 syntax enable
 set encoding=utf-8
 filetype plugin on
@@ -11,10 +11,13 @@ set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
 set number
+set ignorecase                     " Ignore case sensitive on searchs
+set smartcase                      " If have any uppercase, active case sensitive
 map  <C-m> :tabn<CR>
 map  <C-1> :tabp<CR>
 map  <C-n> :tabnew<CR>
 set pastetoggle=<F4>
+set mouse=a
 let mapleader = ","
 nnoremap <Tab> <C-w>w
 inoremap jk <ESC>
