@@ -111,3 +111,9 @@ silent execute '!mkdir -p "'.$HOME.'/.vim/swapfiles"'
 set backupdir=$HOME/.vim/swapfiles//
 set directory=$HOME/.vim/swapfiles//
 "}
+"
+"Properly handle xml indentation
+"{
+set nocompatible
+filetype plugin indent on
+"}
