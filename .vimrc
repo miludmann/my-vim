@@ -119,3 +119,9 @@ set directory=$HOME/.vim/swapfiles//
 set nocompatible
 filetype plugin indent on
 "}
+"
+"
+"{
+set cursorline
+let g:vim_search_pulse_mode = 'cursor_line'
+"}
