@@ -120,8 +120,15 @@ set nocompatible
 filetype plugin indent on
 "}
 "
-"
+"Pulse cursor line
 "{
 set cursorline
 let g:vim_search_pulse_mode = 'cursor_line'
+"}
+"
+"Run the Flake8 check every time you write a Python file
+"NB: for flake8 to work, you need first to install it on your machine:
+"       pip install flake8
+"{
+autocmd BufWritePost *.py call Flake8()
 "}

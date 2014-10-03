@@ -40,3 +40,6 @@
 [submodule "bundle/vim-search-pulse"]
 	path = bundle/vim-search-pulse
 	url = https://github.com/inside/vim-search-pulse
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8
