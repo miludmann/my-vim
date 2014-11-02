@@ -132,3 +132,8 @@ let g:vim_search_pulse_mode = 'cursor_line'
 "{
 autocmd BufWritePost *.py call Flake8()
 "}
+"Vim-mark
+"To highlight multiple words with multiple colors
+"{
+let g:mwDefaultHighlightingPalette = 'maximum' 
+"}
