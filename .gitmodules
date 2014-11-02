@@ -43,3 +43,6 @@
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8
+[submodule "bundle/vim-mark"]
+	path = bundle/vim-mark
+	url = https://github.com/Yggdroot/vim-mark
