@@ -1,48 +1,48 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = git@github.com:scrooloose/nerdcommenter.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/javacomplete"]
 	path = bundle/javacomplete
-	url = git://github.com/vim-scripts/javacomplete.git
+	url = git@github.com:vim-scripts/javacomplete.git
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe.git
+	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git://github.com/bling/vim-airline.git
+	url = git@github.com:bling/vim-airline.git
 [submodule "bundle/luna"]
 	path = bundle/luna
-	url = git://github.com/Pychimp/vim-luna.git
+	url = git@github.com:Pychimp/vim-luna.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "bundle/gitv"]
 	path = bundle/gitv
-	url = git://github.com/gregsexton/gitv.git
+	url = git@github.com:gregsexton/gitv.git
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
-	url = git://github.com/tpope/vim-eunuch.git
+	url = git@github.com:tpope/vim-eunuch.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
+	url = git@github.com:tpope/vim-unimpaired.git
 [submodule "bundle/vim-over"]
 	path = bundle/vim-over
-	url = https://github.com/osyo-manga/vim-over
+	url = git@github.com:osyo-manga/vim-over.git
 [submodule "bundle/vim-search-pulse"]
 	path = bundle/vim-search-pulse
-	url = https://github.com/inside/vim-search-pulse
+	url = git@github.com:inside/vim-search-pulse.git
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
-	url = https://github.com/nvie/vim-flake8
+	url = git@github.com:nvie/vim-flake.git
 [submodule "bundle/vim-mark"]
 	path = bundle/vim-mark
-	url = https://github.com/Yggdroot/vim-mark
+	url = git@github.com:Yggdroot/vim-mark.git
